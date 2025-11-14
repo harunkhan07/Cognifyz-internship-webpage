@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognifyz Technologies</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Set the default font for the entire page */
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Soft, light background for good contrast with cards */
+            background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+            /* Reserve space for the fixed header so content doesn't jump/overlap */
+            padding-top: 72px;
+            color: #0f172a; /* default page text color (slate-900) */
+        }
+
+        /* Header default: light blue background with dark text */
+        .header-default {
+            background-color: #ffffff; /* blue-100 */
+            color: #0f172a; /* slate-900 */
+        }
+        .header-default a { color: #0f172a; }
+        .header-default .logo-icon { color: #4f46e5; } /* indigo-500 */
+
+        /* Header when scrolled: light gray background and elevated */
+        .header-scrolled {
+            background-color: #9db6ce; /* slate-100 */
+            color: #0f172a;
+            backdrop-filter: blur(4px);
+        }
+        .header-scrolled a { color: #0f172a; }
+        .header-scrolled .logo-icon { color: #2563eb; } /* blue-600 */
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Fixed top navigation (changes color on scroll) -->
+    <header id="site-header" class="fixed inset-x-0 top-0 z-50 header-default transition-colors duration-300">
+        <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+            <a href="#" class="flex items-center space-x-3">
+                <svg class="h-8 w-8 logo-icon text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6l4 2" />
+                </svg>
+                <span class="font-semibold text-lg">Cognifyz Technologies</span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="#overview" class="hover:text-indigo-300">Program</a>
+                <a href="#skills" class="hover:text-indigo-300">Skills</a>
+                <a href="#contact" class="hover:text-indigo-300">Contact</a>
+                <a href="#apply" class="inline-block bg-white text-indigo-700 font-semibold px-4 py-2 rounded-full shadow hover:bg-gray-100 transform hover:scale-105 transition">Apply</a>
+            </nav>
+
+            <div class="md:hidden">
+                <!-- mobile: simple menu placeholder -->
+                <button aria-label="Open menu" id="mobile-menu-button" class="p-2 rounded-md border border-white/10">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-6 md:p-12">
+
+        <!-- Hero / Introduction (kept visually similar to original header) -->
+        <section id="overview" class="mb-16 bg-gradient-to-r from-indigo-600 via-indigo-500 to-teal-400 text-white p-12 md:p-16 rounded-xl shadow-md border border-indigo-600/20">
+            <div class="text-center">
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">
+                    Internship Opportunities at Cognifyz Technologies
+                </h1>
+                <p class="mt-4 text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">
+                    Launch your career with a practical, mentorship-driven internship where you'll build production-quality web experiences alongside experienced engineers.
+                </p>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-white p-8 rounded-xl shadow-md border border-gray-200">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Program Overview</h2>
+            <p class="text-base md:text-lg text-gray-700 mb-4">
+                The Cognifyz Web Developer Internship is a concentrated, hands-on program focused on delivering real product experience. Interns work on cross-functional teams, contribute to the codebase, and participate in the full software lifecycle — from design and implementation to testing and deployment.
+            </p>
+            <div class="mt-6 border-l-4 border-indigo-500 pl-4">
+                <p class="text-lg font-semibold text-gray-900">Program Duration</p>
+                <p class="text-base md:text-lg text-gray-700">This is a <strong> 4-week, remote-first internship program</strong>. Exceptional performers may be extended offers for full-time roles.</p>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">Why Join Cognifyz?</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center space-x-4">
+                        <svg class="h-10 w-10 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5-4.5L7.5 12l2.25 2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+                        </svg>
+                        <h3 class="text-xl md:text-2xl font-semibold">Practical Product Experience</h3>
+                    </div>
+                    <p class="mt-4 text-gray-700">
+                        Work on features that ship to real users. You’ll learn code review best practices, collaborate with designers and product managers, and gain experience with deployment workflows.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center space-x-4">
+                        <svg class="h-10 w-10 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 00-12 0m12 0a9.094 9.094 0 00-12 0m12 0v-0.01c0-4.97-4.03-9-9-9S3 13.71 3 18.71v0.01m12 0v-0.01c0-4.97-4.03-9-9-9S3 13.71 3 18.71v0.01M12 6.75A2.25 2.25 0 0114.25 9v1.08c0 1.15-.29 2.2.81 3.11m-6.12-3.11A2.25 2.25 0 019.75 9v1.08c0 1.15.29 2.2-.81 3.11" />
+                        </svg>
+                        <h3 class="text-xl md:text-2xl font-semibold">Mentorship & Feedback</h3>
+                    </div>
+                    <p class="mt-4 text-gray-700">
+                        Each intern is paired with a senior engineer for regular 1:1 mentorship, technical feedback, and career guidance designed to accelerate your growth.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="mb-12 bg-white p-8 rounded-xl shadow-md border border-gray-200">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Desired Skills & Qualifications</h2>
+            <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                        Pursuing or recently completed a degree in Computer Science, Software Engineering, or a related field.
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                        Solid understanding of HTML5, CSS3, and modern JavaScript (ES6+).
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                        Familiarity with a modern front-end framework such as React, Vue, or Svelte.
+                    </li>
+                </ul>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                        Experience or familiarity with back-end technologies such as Node.js/Express or Python (Django/Flask) is a plus.
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                        Practical experience using Git and collaborative development workflows.
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                        Excellent communication skills and a strong desire to learn.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="apply" class="text-center bg-indigo-700 text-white p-12 rounded-xl shadow-xl mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to Launch Your Career?</h2>
+            <p class="text-base md:text-lg text-indigo-100 mb-8 max-w-2xl mx-auto">
+                Applications for our Winter 2026 cohort are open. If you are excited to learn, build, and contribute, we encourage you to apply.
+            </p>
+            <a href="https://www.cognifyz.com" target="_blank" class="inline-block bg-white text-indigo-700 font-bold text-lg px-8 py-3 rounded-full shadow-md hover:bg-gray-100 transform hover:scale-105 transition-all duration-300">
+                Apply Now
+            </a>
+        </section>
+
+        <!-- Contact / Get in touch -->
+        <section id="contact" class="mb-16 bg-white p-8 rounded-xl shadow-md border border-gray-200">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Contact & Inquiries</h2>
+            <p class="text-gray-700 mb-6">For questions about the internship, hiring process, or to request accommodations, please reach out using any of the methods below.</p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="font-semibold text-gray-900 mb-2">General</h3>
+                    <p class="text-gray-700"><strong>Email:</strong> <a href="mailto:internships@cognifyz.com" class="text-indigo-600 hover:underline">internships@cognifyz.com</a></p>
+                    <p class="text-gray-700"><strong>Phone:</strong> <a href="tel:+11234567890" class="text-indigo-600 hover:underline">+1 (123) 456-7890</a></p>
+                    <p class="text-gray-700"><strong>Website:</strong> <a href="https://www.cognifyz.com" class="text-indigo-600 hover:underline" target="_blank" rel="noopener">www.cognifyz.com</a></p>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Corporate & Social</h3>
+                    <p class="text-gray-700"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/cognifyz" class="text-indigo-600 hover:underline" target="_blank" rel="noopener">linkedin.com/company/cognifyz</a></p>
+                    <p class="text-gray-700"><strong>Twitter:</strong> <a href="https://twitter.com/cognifyz" class="text-indigo-600 hover:underline" target="_blank" rel="noopener">@Cognifyz</a></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 mt-8">
+        <div class="max-w-6xl mx-auto px-6 py-10 text-center">
+            <h3 class="text-2xl font-semibold text-white mb-2">Cognifyz Technologies</h3>
+            <p class="mb-4 text-gray-300">Questions about internships? Contact our talent team at <a href="mailto:internships@cognifyz.com" class="text-indigo-400 hover:underline">internships@cognifyz.com</a> or call <a href="tel:+11234567890" class="text-indigo-400 hover:underline">+1 (123) 456-7890</a>.</p>
+            <div class="border-t border-gray-700 pt-6">
+                <p class="text-sm">&copy; 2025 Cognifyz Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Small script to toggle header background on scroll -->
+    <script>
+        (function () {
+            const header = document.getElementById('site-header');
+            const scrollThreshold = 10; // px
+
+            function onScroll() {
+                    if (window.scrollY > scrollThreshold) {
+                        // when scrolled: switch to light gray elevated header
+                        header.classList.add('header-scrolled', 'shadow-lg');
+                        header.classList.remove('header-default');
+                    } else {
+                        // default: light blue header
+                        header.classList.remove('header-scrolled', 'shadow-lg');
+                        header.classList.add('header-default');
+                    }
+            }
+
+            document.addEventListener('scroll', onScroll, { passive: true });
+            // initialize on load
+            onScroll();
+        })();
+    </script>
+
+</body>
+</html>
